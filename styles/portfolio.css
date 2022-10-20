@@ -1,0 +1,12 @@
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+/* font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif; */
