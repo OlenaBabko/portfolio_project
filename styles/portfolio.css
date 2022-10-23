@@ -3,9 +3,9 @@
     --branding-color: #6457FD;
     --heading-font-family: 'Playfair Display', serif;
     --default-font-family: 'Poppins', sans-serif;
+    --primary-color: #6200ff;
+    --shadow: #999999;
 }
-/* font-family: 'Playfair Display', serif;
-font-family: 'Poppins', sans-serif; */
 body {
     font-family: var(--default-font-family);
 }
@@ -70,7 +70,7 @@ p {
 @media (max-width: 900px) {
     h1 {
         font-size: 60px;
-        line-height: 2;
+        line-height: 56;
     }
     h2 {
         font-size: 44px;
@@ -85,4 +85,69 @@ p {
 }
 .col img {
     margin-top: 160px;
+}
+
+.about-section {
+    padding: 40px 40px;
+    /* text-align: center;
+    padding: 0; */
+}
+.about-section h1 {
+    font-size: 64px;
+    line-height: 70px;
+}
+.about-section h2 {
+    font-size: 18px;
+    font-family: var(--default-font-family);
+}
+.about {
+    margin: 30px;
+}
+
+.col-md-6 img {
+    margin-top: 250px;
+}
+
+.col-md-6 a {
+    margin: 0px 120px;
+}
+
+.aboutMeButton,
+.contactMeButton,
+.viewProjectsButton {
+    display: block;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 15px 10px;
+    margin: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px var(--shadow);
+    transition: all 200ms ease-in-out;
+}
+.aboutMeButton:hover,
+.contactMeButton:hover,
+.viewProjectsButton:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: white;
+}
+.col-md-6 a {
+    text-decoration: none;
+    margin: 0px;
+    color: var(--primary-color);
+}
+
+.rowButtons a {
+    text-decoration: none;
+    margin: 10px;
+    color: var(--primary-color);
+}
+.rowButtons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 5px 0px;
 }
