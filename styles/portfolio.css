@@ -111,6 +111,9 @@ p {
 .content {
     margin: 30px;
 }
+#contacts p {
+    text-align: center;
+}
 #avatar img {
     margin-top: 250px;
 }
