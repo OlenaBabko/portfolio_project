@@ -123,6 +123,7 @@ p {
 }
 
 .aboutMeButton,
+.worksButton,
 .contactMeButton,
 .viewProjectsButton {
     display: block;
@@ -137,6 +138,7 @@ p {
     transition: all 200ms ease-in-out;
 }
 .aboutMeButton:hover,
+.worksButton:hover,
 .contactMeButton:hover,
 .viewProjectsButton:hover {
     opacity: 0.9;
