@@ -1,9 +1,9 @@
 :root {
     --background-color: #F5F2FE;
-    --branding-color: #6457FD;
     --heading-font-family: 'Playfair Display', serif;
     --default-font-family: 'Poppins', sans-serif;
     --primary-color: #6200ff;
+    --default-color: black;
     --shadow: #999999;
 }
 body {
@@ -22,6 +22,9 @@ h1 {
 }
 h2 {
     font-size: 64px;
+}
+h4 {
+    font-size: 26px;
 }
 p {
     font-weight: normal;
@@ -47,7 +50,7 @@ p {
 }
 
 .btn-branding {
-    background: var(--branding-color);
+    background: var(--primary-color);
     border-radius: 4px;
     color: white;
     font-size: 18px;
@@ -55,12 +58,17 @@ p {
     padding: 12px 20px;
 }
 .btn-branding-outline {
-    color: var(--branding-color);
-    border: 1px solid var(--branding-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     border-radius: 4px;
     font-size: 18px;
     line-height: 27px;
     padding: 12px 20px;
+}
+.btn-branding:hover {
+    background: white;
+    color: var(--default-color);
+    border: 1px solid var(--primary-color);
 }
 
 .project-description {
@@ -90,7 +98,7 @@ nav a {
 }
 nav a:hover,
 nav li.active a {
-    color: var(--branding-color);
+    color: var(--primary-color);
 }
 nav a {
     font-size: 14px;
@@ -194,4 +202,38 @@ nav a {
     justify-content: center;
     text-align: center;
     margin: 5px 0px;
+}
+
+
+footer {
+    margin: 50px 0;
+}
+footer .email-link {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+footer .email-link:hover {
+    color: var(--primary-color);
+}
+footer .links a {
+    margin: 0 20px;
+    color: var(--default-color);
+    background: var(--background-color);
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 10px 14px;
+    transition: all 150ms ease-in-out;
+}
+footer .links a:hover {
+    color: var(--background-color);
+    background: var(--primary-color);
+}
+footer .contact-box {
+    background: var(--background-color);
+    padding: 30px;
+    border-radius: 10px;
+}
+footer .contact-box p {
+    padding-left: 30px;
 }
